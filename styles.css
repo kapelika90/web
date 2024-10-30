@@ -1,0 +1,78 @@
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: SansSerif, serif;
+    background: #20B2AA;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 2s forwards;
+    background: #00FFFF;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=submit] {
+    width: 200%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #E0FFFF;
+    transition: background 0.3s;
+}
+
+select {
+    width: 175%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #E0FFFF;
+    transition: background 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
