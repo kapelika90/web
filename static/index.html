@@ -8,26 +8,26 @@
 <body class="page">
 <div class="container">
   <h1>Registration Form</h1>
-  <form id="registration-form">
+  <form id="registration-form" action="/reg-data" method="post">
     <div class="form-input">
       <label for="first-name-input">Enter your firstname</label>
-      <input type="text" id="first-name-input" placeholder="Firstname" required />
+      <input type="text" id="first-name-input" placeholder="Firstname" required name="firstname"/>
     </div>
     <div class="form-input">
       <label for="last-name-input">Enter your lastname</label>
-      <input type="text" id="last-name-input" placeholder="Lastname" required />
+      <input type="text" id="last-name-input" placeholder="Lastname" required name="lastname"/>
     </div>
     <div class="form-input">
       <label for="patronymic-input">Enter your patronymic</label>
-      <input type="text" id="patronymic-input" placeholder="Patronymic" required />
+      <input type="text" id="patronymic-input" placeholder="Patronymic" required name="patronymic"/>
     </div>
     <div class="form-input">
       <label for="age-input">Enter your age</label>
-      <input type="number" id="age-input" placeholder="Age" min="0" required />
+      <input type="number" id="age-input" placeholder="Age" min="0" required name="age"/>
     </div>
     <div class="form-input">
       <label for="password-input">Enter your password</label>
-      <input type="password" id="password-input" placeholder="Password" required />
+      <input type="password" id="password-input" placeholder="Password" required name="password"/>
     </div>
     <div class="form-input">
       <label for="user-type-input">Select user type</label>
